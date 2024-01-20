@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0020)https://invenium.ca/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="keywords" content="joomla, Joomla">
+    <meta name="description" content="Joomla! - the dynamic portal engine and content management system">
+    <meta name="generator" content="Joomla! - Open Source Content Management">
+    <title>Home</title>
+    <link href="http://invenium.ca/invenium/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0">
+    <link href="http://invenium.ca/invenium/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0">
+    <link href="http://invenium.ca/invenium/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="./Home_files/grid-12-override.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/gantry-override.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/joomla-override.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/splitmenu.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/style.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/nivo-slider.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/prettyPhoto.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/jquery.popeye.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/colortip-1.0-jquery.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/jquery.popeye.style.css" type="text/css">
+    <link rel="stylesheet" href="./Home_files/znslider.css" type="text/css">
+    <style type="text/css">
+        body {background:#e5e5e5;}
+        #slider_area,#slider,.slide ,#slider.slider-wrapper{		
+            height:325px !important;
+        }
+
+    </style>
+    <script src="./Home_files/mootools-core.js.download" type="text/javascript"></script>
+    <script src="./Home_files/core.js.download" type="text/javascript"></script>
+    <script src="./Home_files/caption.js.download" type="text/javascript"></script>
+    <script src="./Home_files/gantry-buildspans.js.download" type="text/javascript"></script>
+    <script src="./Home_files/browser-engines.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery-1.7.1.min.js.download" type="text/javascript"></script>
+    <script src="./Home_files/colortip-1.0-jquery.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.easing.1.3.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.form.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.popeye-2.0.4.min.js.download" type="text/javascript"></script><style type="text/css"> .ppy-imglist { position: absolute; top: -1000em; left: -1000em; } </style><style type="text/css"> .ppy-imglist { position: absolute; top: -1000em; left: -1000em; } </style>
+    <script src="./Home_files/jquery.prettyPhoto.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.cycle.all.min.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.tools.min.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.validate.js.download" type="text/javascript"></script>
+    <script src="./Home_files/menu_min.js.download" type="text/javascript"></script>
+    <script src="./Home_files/script.js.download" type="text/javascript"></script>
+    <script src="./Home_files/jquery.cycle.all.min(1).js.download" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEvent('load', function() {
+            new JCaption('img.caption');
+        });
+        window.addEvent('domready', function() {
+            var modules = ['rt-block'];
+            var header = ['h3','h2','h1'];
+            GantryBuildSpans(modules, header);
+        });
+
+
+        //<![CDATA[
+        // Home Page Slider  
+        jQuery(document).ready(function(){
+
+            var slider_area;
+            var slider_buttons;
+
+            // Which slider
+            if (jQuery("#slider_area").length>0){
+
+                // Home Page Slider
+                slider_area="#slider_area";	
+                slider_buttons="#numbers";
+
+                jQuery(slider_area).cycle({ 
+                    fx:     "fade",  // Effect 
+                    timeout:  4000,  // Timeout value (ms) = 4 seconds
+                    easing: "backout", 
+                    pager:  "#numbers", 
+                    cleartype:  1,
+                    after:   onAfter ,
+                    before:  onBefore,
+                    pause:           true,     // true to enable "pause on hover"
+                    pauseOnPagerHover: true,   // true to pause when hovering over pager link					
+                    pagerAnchorBuilder: function(idx) { 
+                        return '<a href="#"><img src="templates/rt_theme15/images/pixel.gif" alt="" width="8" height="8" /></a>'; 
+                    }
+                });
+            }   
+
+            function onBefore() {
+                jQuery("#slider .text,#slider .title").css({opacity:0});
+            } 
+
+            function onAfter() {
+                jQuery("#slider .title").delay(0).animate({opacity:1},1200);
+                jQuery("#slider .text").delay(300).animate({opacity:1},600);
+            }		
+        });
+        //]]>
+
+    </script>
+    <link type="text/css" rel="stylesheet" href="./Home_files/css">
+    <link type="text/css" rel="stylesheet" href="./Home_files/css(1)">
+    <link type="text/css" rel="stylesheet" href="./Home_files/css(2)">
+    <link type="text/css" rel="stylesheet" href="./Home_files/css(3)">
+    </head>
+    <body class="cssstyle-red menu-type-znmenu col12">
+
+        <div id="container">
+            <div class="background_pic_border">
+                <div class="background_pic_holder">
+                    <img width="100%" alt="" src="./Home_files/background2.jpg">
+                </div>
+                <div class="back-curv"></div>
+            </div>
+            <!-- Start Wrapper -->
+            <div id="wrapper">
+                <!-- Start Sidebar -->
+                <div id="sidebar">
+                    <div class="sidebar_top"></div>				<div class="sidebar_content">
+                    <!-- Start Logo -->
+                    <div id="logo"><a href="http://invenium.ca/invenium/"><img class="png" alt="invenium.ca" src="./Home_files/INVENIUM-Logo3.gif"></a></div>
+
+                    <div class="clear"></div>
+                    <!-- End Logo -->
+                    <!-- Start Navigation -->
+                    <div id="navigation" class="top">
+                        <ul class="menu">
+                            <li class="item-435 current-menu-item current_page_item active"><a href="https://invenium.ca/Home.htm">Home</a></li><li class="item-473"><a href="https://invenium.ca/web.htm">IT Solutions</a></li><li class="item-474"><a href="https://invenium.ca/innovation.htm">Products</a></li><li class="item-476"><a href="https://invenium.ca/services.htm">Professional Services</a></li><li class="item-472"><a href="https://invenium.ca/careers.htm">Careers</a></li><li class="item-475"><a href="https://invenium.ca/contact.htm">Contact</a></li></ul>
+                    </div>
+
+                    <div class="clear"></div>
+                    <!-- End Navigation -->	
+                    <!-- Start Sidebar -->				
+                    <div class="rt-block">
+
+                        <div class="module-title">
+                            <h4 class="title">GET IN TOUCH</h4>
+                        </div>
+
+                        <div class="custom">
+                            <div><img src="./Home_files/addr-red3.png" border="0" alt=""></div>
+                        </div>
+                    </div><div class="clear"></div>
+                    <div class="rt-block">
+
+                    </div><div class="clear"></div>
+
+                    <div class="clear"></div>
+                    <!-- End Sidebar -->		
+                    </div>
+                    <div class="sidebar_bottom"></div>			</div>
+                <!-- End Sidebar -->
+
+                <!-- Start Content -->
+                <div id="content">
+
+                    <div class="content_top "></div>
+                    <div class="content">
+
+                        <div class="clear">
+                        </div>
+
+                        <div id="rt-main" class="mb9-sa3">
+                            <div class="rt-container">
+                                <div class="box full single">
+                                    <div class="rt-block">
+                                        <div id="rt-mainbody">
+                                            <div class="component-content">
+                                                <div class="rt-blog ">
+                                                    <div class="rt-leading-articles">
+                                                        <div class="leading-0">
+
+                                                            <div class="rt-article"><div class="rt-article-bg">
+                                                                <p>&nbsp;</p>
+                                                                <p><img src="./Home_files/main_slider.jpg" alt="" width="639" height="292">
+                                                                </p>
+
+                                                                <p>INVENIUM Technologies is a research-based company with focus on innovation and development of advanced solutions and technologies. Our goal is to utilize our extensive in-house knowledge towards breaking of the barriers imposed by legacy technologies and exploring  new horizons. INVENIUM provides advanced solutions and cutting edge technologies. INVENIUM was founded as a spin off company from Queen's University at Kingston and our prime objectives at INVENIUM are to enjoy innovation, generate knowledge and produce quality products for our customers.</p>
+
+                                                                </div></div>
+
+                                                            <div class="item-separator"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <style>
+                                                        .tg  {border-collapse:collapse;border-spacing:0;}
+                                                        .tg td{border-color:white;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+                                                            overflow:hidden;padding:10px 5px;word-break:normal;}
+                                                        .tg th{border-color:white;border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;
+                                                            font-weight:normal;overflow:hidden;padding:0px 0px;word-break:normal;}
+                                                        .tg .tg-0lax{background-color:#ffffff;text-align:left;vertical-align:top}
+                                                        .tg .tg-1lax{background-color:#ffffff;text-align:right;vertical-align:top}
+
+                                                    </style>
+                                                    <table class="tg" style="width:100%" margin-left="auto" margin-right:="auto">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="tg-0lax" style="width:5%">  </th>
+
+                                                                <th class="tg-0lax" style="width:65%">
+                                                                    <a href="https://gounbound.com/" target="_blank">
+                                                                        <img src="./Home_files/GoUnbound.png" border="0" alt="gounbound.com" style="border: 0; float: center;">
+                                                                    </a>
+                                                                </th>
+                                                                <th class="tg-1lax" style="width:20%">
+                                                                    <img src="./Home_files/wipo-small.png" border="0" alt="Wipo Gold medal" style="border: 0; float: right;">
+                                                                </th>
+
+                                                                <th class="tg-0lax" style="width:10%">  </th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+
+                                                    <div class="items-row cols-3 row-0">
+                                                        <div class="item column-1">
+                                                            <div class="rt-article"><div class="rt-article-bg">
+                                                                <h2 class="title">
+                                                                    <a href="https://invenium.ca/web.htm" style="visibility: visible;"><span>IT</span> Solutions</a>
+                                                                </h2>
+                                                                <p><span style="font-size: 12px;">INVENIUM develops state of the art Information Technology (IT) systems based on web technology and mobile systems.&nbsp;</span></p>
+                                                                <p class="rt-readon-surround">
+                                                                    <a href="https://invenium.ca/web.htm" class="readon"><span>
+                                                                        Read more: IT Solutions</span></a>
+                                                                </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-separator"></div>
+                                                        </div>
+
+                                                        <div class="item column-2">
+                                                            <div class="rt-article"><div class="rt-article-bg">
+                                                                <h2 class="title">
+                                                                    <a href="https://invenium.ca/innovation.htm" style="visibility: visible;">Products</a>
+                                                                </h2>
+                                                                <p>Since the birth of INVENIUM, we have been constantly developing innovative products and technologies in the area of intelligent systems and devices.&nbsp;</p>
+                                                                <p class="rt-readon-surround">
+                                                                    <a href="https://invenium.ca/innovation.htm" class="readon"><span>
+                                                                        Read more: Products </span></a>
+                                                                </p>
+                                                                </div></div>
+                                                            <div class="item-separator"></div>
+                                                        </div>
+
+                                                        <div class="item column-3">
+                                                            <div class="rt-article"><div class="rt-article-bg">
+                                                                <h2 class="title">
+                                                                    <a href="https://invenium.ca/services.htm" style="visibility: visible;"><span>Professional</span> Services</a>
+                                                                </h2>
+                                                                <p><span style="font-size: 12px;">INVENIUM provides professional services including consulting, due diligence, design and implementation related to IT solutions and Intelligent Systems.&nbsp;</span></p>
+                                                                <p class="rt-readon-surround">
+                                                                    <a href="https://invenium.ca/services.htm" class="readon"><span>
+                                                                        Read more: Preofessional Services</span></a>
+                                                                </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="item-separator"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content_bottom"></div>				
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Wrapper -->
+            <div class="clear"></div>
+            <div id="footer">	
+
+
+                <ul class="menu">
+                    <li id="item-435" class="current active  first"><a href="https://invenium.ca/home.htm"><span>Home</span></a></li><li id="item-473"><a href="https://invenium.ca/web.htm"><span> IT Solutions</span></a></li><li id="item-474"><a href="https://invenium.ca/innovation.htm"><span>Products</span></a></li><li id="item-476"><a href="https://invenium.ca/services.htm"><span>Professional Services</span></a></li><li id="item-472"><a href="https://invenium.ca/careers.htm"><span>Careers</span></a></li><li id="item-475" class="last"><a href="https://invenium.ca/contact.htm"><span>Contact</span></a></li>
+                </ul>	
+
+                <div class="clear"></div>
+                <div class="copyright">
+                    Copyright INVENIUM Technologies Inc. 2006 - 2021 , All Rights Reserved.		</div>
+
+            </div>
+
+        </div>
+    </body></html>

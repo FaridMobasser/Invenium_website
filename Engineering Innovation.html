@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0034)https://invenium.ca/innovation.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="keywords" content="joomla, Joomla">
+    <meta name="author" content="Administrator">
+    <meta name="description" content="Joomla! - the dynamic portal engine and content management system">
+    <meta name="generator" content="Joomla! - Open Source Content Management">
+    <title>Engineering Innovation</title>
+    <link href="http://invenium.ca/invenium/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="./Engineering Innovation_files/grid-12-override.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/gantry-override.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/joomla-override.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/splitmenu.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/style.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/nivo-slider.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/prettyPhoto.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/jquery.popeye.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/colortip-1.0-jquery.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/jquery.popeye.style.css" type="text/css">
+    <link rel="stylesheet" href="./Engineering Innovation_files/znslider.css" type="text/css">
+    <style type="text/css">
+        body {background:#e5e5e5;}
+        #slider_area,#slider,.slide ,#slider.slider-wrapper{		
+            height:325px !important;
+        }
+
+    </style>
+    <script src="./Engineering Innovation_files/mootools-core.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/core.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/caption.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/gantry-buildspans.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/browser-engines.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery-1.7.1.min.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/colortip-1.0-jquery.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.easing.1.3.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.form.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.popeye-2.0.4.min.js.download" type="text/javascript"></script><style type="text/css"> .ppy-imglist { position: absolute; top: -1000em; left: -1000em; } </style><style type="text/css"> 
+    .ppy-imglist { position: absolute; top: -1000em; left: -1000em; } .game_title {
+        color: #0F0;
+    }
+    .title_green {
+        color: #090;
+    }
+    .cssstyle-red.menu-type-znmenu.col12 #container #wrapper #content .content #rt-main .rt-container h5 {
+        color: #666;
+    }
+    </style>
+    <script src="./Engineering Innovation_files/jquery.prettyPhoto.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.cycle.all.min.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.tools.min.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.validate.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/menu_min.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/script.js.download" type="text/javascript"></script>
+    <script src="./Engineering Innovation_files/jquery.cycle.all.min(1).js.download" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEvent('load', function() {
+            new JCaption('img.caption');
+        });
+        window.addEvent('domready', function() {
+            var modules = ['rt-block'];
+            var header = ['h3','h2','h1'];
+            GantryBuildSpans(modules, header);
+        });
+
+
+        //<![CDATA[
+        // Home Page Slider  
+        jQuery(document).ready(function(){
+
+            var slider_area;
+            var slider_buttons;
+
+            // Which slider
+            if (jQuery("#slider_area").length>0){
+
+                // Home Page Slider
+                slider_area="#slider_area";	
+                slider_buttons="#numbers";
+
+                jQuery(slider_area).cycle({ 
+                    fx:     "fade",  // Effect 
+                    timeout:  4000,  // Timeout value (ms) = 4 seconds
+                    easing: "backout", 
+                    pager:  "#numbers", 
+                    cleartype:  1,
+                    after:   onAfter ,
+                    before:  onBefore,
+                    pause:           true,     // true to enable "pause on hover"
+                    pauseOnPagerHover: true,   // true to pause when hovering over pager link					
+                    pagerAnchorBuilder: function(idx) { 
+                        return '<a href="#"><img src="templates/rt_theme15/images/pixel.gif" alt="" width="8" height="8" /></a>'; 
+                    }
+                });
+            }   
+
+            function onBefore() {
+                jQuery("#slider .text,#slider .title").css({opacity:0});
+            } 
+
+            function onAfter() {
+                jQuery("#slider .title").delay(0).animate({opacity:1},1200);
+                jQuery("#slider .text").delay(300).animate({opacity:1},600);
+            }		
+        });
+        //]]>
+
+    </script>
+    <link type="text/css" rel="stylesheet" href="./Engineering Innovation_files/css">
+    <link type="text/css" rel="stylesheet" href="./Engineering Innovation_files/css(1)">
+    <link type="text/css" rel="stylesheet" href="./Engineering Innovation_files/css(2)">
+    <link type="text/css" rel="stylesheet" href="./Engineering Innovation_files/css(3)">
+    </head>
+    <body class="cssstyle-red menu-type-znmenu col12">
+
+
+
+
+        <div id="container">
+
+
+            <div class="background_pic_border">
+
+                <div class="background_pic_holder">
+                    <img width="100%" alt="" src="./Engineering Innovation_files/background2.jpg">
+                </div>
+
+
+                <div class="back-curv"></div>
+            </div>
+            <!-- Start Wrapper -->
+            <div id="wrapper">
+                <!-- Start Sidebar -->
+                <div id="sidebar">
+                    <div class="sidebar_top"></div>				<div class="sidebar_content">
+                    <!-- Start Logo -->
+                    <div id="logo"><a href="http://invenium.ca/invenium/"><img class="png" alt="invenium.ca" src="./Engineering Innovation_files/INVENIUM-Logo3.gif"></a></div>
+
+                    <div class="clear"></div>
+                    <!-- End Logo -->
+                    <!-- Start Navigation -->
+                    <div id="navigation" class="top">
+                        <ul class="menu">
+                            <li class="item-435"><a href="https://invenium.ca/home.htm">Home</a></li><li class="item-473"><a href="https://invenium.ca/web.htm">IT Solutions</a></li><li class="item-474 current-menu-item current_page_item active"><a href="https://invenium.ca/innovation.htm">Products</a></li><li class="item-476"><a href="https://invenium.ca/services.htm">Professional Services</a></li><li class="item-472"><a href="https://invenium.ca/careers.htm">Careers</a></li><li class="item-475"><a href="https://invenium.ca/contact.htm">Contact</a></li></ul>
+                    </div>
+
+                    <div class="clear"></div>
+                    <!-- End Navigation -->	
+                    <!-- Start Sidebar -->				
+                    <div class="rt-block">
+
+                        <div class="module-title">
+                            <h4 class="title">GET IN TOUCH</h4>
+                        </div>
+
+
+
+                        <div class="custom">
+                            <div><img src="./Engineering Innovation_files/addr-red3.png" border="0" alt=""></div>
+                        </div>
+                    </div><div class="clear"></div>
+                    <div class="rt-block">
+
+
+
+                    </div><div class="clear"></div>
+
+                    <div class="clear"></div>
+                    <!-- End Sidebar -->		
+                    </div>
+                    <div class="sidebar_bottom"></div>			</div>
+                <!-- End Sidebar -->
+
+                <!-- Start Content -->
+                <div id="content">
+                    <div class="content_top "></div>
+                    <div class="content">
+
+
+
+
+
+
+                        <div id="zn-slider">
+                            <div class="rt-block"></div>
+
+                        </div>
+                        <div class="clear"></div>
+
+
+
+                        <div id="rt-main" class="mb9-sa3">
+                            <div class="rt-container">
+                                <div class="box full single">
+                                    <div class="rt-block">
+                                        <div id="rt-mainbody">
+                                            <div class="component-content">
+                                                <div class="rt-article"><div class="rt-article-bg">
+                                                    <div class="item-page">
+                                                        <p>&nbsp;</p>
+                                                        <p><img src="./Engineering Innovation_files/main_slider.jpg" alt="" width="639" height="292"></p>
+                                                        <h2 class="title">
+                                                            <a href="https://invenium.ca/innovation.htm" style="visibility: visible;">Products</a>
+                                                        </h2>
+                                                        <p><span style="font-size: 12px;">Since the birth of INVENIUM, we have been constantly developing innovative products and technologies in areas such as medical devices, robotic system and intelligent devices.&nbsp;</span><span style="font-size: 12px;">&nbsp;</span></p>
+                                                        <h2 style="visibility: visible;"><span>Biological</span> Signal Analysis Instruments</h2>
+                                                        <p>INVENIUM provides customized systems for measurement and analysis of the EMG, ECG and EEG signals. Our engineers have mastered the technology for measurement of the biological signals which are in micro-volt level and are often chaotic and contaminated with EMI noise. We are able to provide both tethered and wireless systems with large bandwidth.</p>
+                                                        <p><img src="./Engineering Innovation_files/bluemyo.png" border="0" alt="bluemyo" style="border: 0;"></p>
+                                                        <p>&nbsp;<span style="font-size: 12px;">Designed to resolve the challenges of subject mobility, ultra-portable BLUEMYO offers unique capabilities. The exceptional lightweight design is an ideal choice for all ages of patients and subjects. BLUEMYO wireless EMG system enables the subject to have total freedom of movement and facilitates easy and fast data collection, while providing high quality measurements. Advance technical design, and exceptional features of the BLUEMYO will enable you to conduct EMG measurement in any environment and situation.</span><span style="font-size: 12px;">Ideal for experienced or novice users alike, BLUEMYO is designed to make EMG recordings effortless. BLUEMYO has a budget constrained design with zero continually operating budget.&nbsp;</span></p>
+                                                        <p><span style="font-size: 12px;">BLUEMYO is able to measure up to eight EMG channels. The EMG is measured via surface electrodes and data transfer to the PC is accomplished via Bluetooth®. Pre/post filtering removes the possibility of sample aliasing and EMG artifact under all operating conditions. &nbsp;Each input channel can be used to read other sensory information, e.g.: EEG, force gauges, accelerometers, foot switches and respiration sensors.</span></p>
+                                                        <p><span style="font-size: 12px;">Key Benefits:</span></p>
+                                                        <ul>
+                                                            <li><span style="font-size: 12px;">Natural movement without constraints for Indoor, &nbsp;Outdoor and &nbsp;Sports applications</span></li>
+                                                            <li><span style="font-size: 12px;">Easy to learn and fast to apply</span></li>
+                                                            <li><span style="font-size: 12px;">Unbeatable cost/benefit ratio</span></li>
+                                                            <li><span style="font-size: 12px;">Hassle-free connections</span></li>
+                                                            <li><span style="font-size: 12px;">Small and ultra-light unit</span></li>
+                                                            <li><span style="font-size: 12px;">Powered by rechargeable batteries</span></li>
+                                                            <li><span style="font-size: 12px;">High quality signals</span></li>
+                                                        </ul>
+                                                        <p>Applications:</p>
+                                                        <ul>
+                                                            <li><span style="font-size: 12px;">Movement Analysis Research</span></li>
+                                                            <li><span style="font-size: 12px;">Rehabilitation</span></li>
+                                                            <li><span style="font-size: 12px;">Ergonomic Studies</span></li>
+                                                            <li><span style="font-size: 12px;">Sport Sciences</span></li>
+                                                            <li><span style="font-size: 12px;">Neurological Studies</span></li>
+                                                            <li><span style="font-size: 12px;">Education</span></li>
+                                                        </ul>
+                                                        <p>&nbsp;<img src="./Engineering Innovation_files/myosens.png" border="0" width="635" height="182"></p>
+                                                        <p><span style="font-size: 12px;">Small and low cost MYOSENS facilitates easy and fast EMG data collection, while providing high quality measurement. Ideal for experienced or novice users alike, MYOSENS is designed to make EMG recordings effortless. MYOSENS has a budget constrained design with zero continually operating budget required.&nbsp;</span></p>
+                                                        <p>MYOSENS is able to measure up to four EMG channels. The EMG is measured via surface electrodes and data is transferred to PC via USB. Pre/post filtering removes the possibility of sample aliasing and EMG artifacts under all operating conditions. The device is powered by USB cable eliminates need for bulky power module. Medical device safety requirements are satisfied with full electrical isolation of USB signal and power lines. Each input channel can be used to read other sensory information, such as EEG, force gauges, accelerometers, foot switches and respiration sensors.</p>
+                                                        <p><span style="font-size: 12px;">Key Benefits:</span></p>
+                                                        <ul>
+                                                            <li><span style="font-size: 12px;">Easy to learn and fast to apply</span></li>
+                                                            <li><span style="font-size: 12px;">Unbeatable cost/benefit ratio</span></li>
+                                                            <li><span style="font-size: 12px;">Hassle-free connections</span></li>
+                                                            <li><span style="font-size: 12px;">Small and ultra-light unit</span></li>
+                                                            <li><span style="font-size: 12px;">Powered by USB</span></li>
+                                                            <li><span style="font-size: 12px;">High quality signals&nbsp;</span></li>
+                                                        </ul>
+                                                        <p>Applications:</p>
+                                                        <ul>
+                                                            <li><span style="font-size: 12px;">Movement Analysis Research</span></li>
+                                                            <li><span style="font-size: 12px;">Rehabilitation</span></li>
+                                                            <li><span style="font-size: 12px;">Ergonomic Studies</span></li>
+                                                            <li><span style="font-size: 12px;">Sport Sciences</span></li>
+                                                            <li><span style="font-size: 12px;">Neurological Studies</span></li>
+                                                            <li><span style="font-size: 12px;">Education</span></li>
+                                                        </ul>
+                                                        <p><img src="./Engineering Innovation_files/ae100.png" border="0" alt="AE100 Electrode" width="635" height="182"><br><span style="font-size: 12px;">The Active EMG Electrode is an advanced solution for problem of interference pickup by electrode cables, providing the best possible suppression of interference by impedance transformation and signal amplification on electrode. The AE-100 electrode is designed with a constant gain of 300 and a built-in pass-band filter with 25-500 Hz bandwidth. The electrodes are designed using two cone-shape silver contact. The plastic sensor enclosure provides electric isolation between skin and electrode electronics. The electrode is designed to be interfaced with the MYOSENS and BLUEMYO EMG systems, however it can be used with any DAQ system following proper signaling.</span></p>
+
+
+                                                    </div>
+                                                    </div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <img src="./Engineering Innovation_files/mg.png" border="0" alt="AE100 Electrode" width="635" height="182"><br>
+                                    MYOGAME is a platform developed at INVENIUM to play games using surface electromyography signals. The platform is using MYOSENS and BLUEMYO EMG measurement platfrom and could be used in conjunction of XNA game development platform to build EMG-based games.<br>
+                                    <br>
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+			
+                </div>
+                <!-- End Content -->
+            </div>
+            <!-- End Wrapper -->
+            <div class="clear"></div>
+            <div id="footer">	
+                <ul class="menu">
+                    <li id="item-435" class="first"><a href="https://invenium.ca/home.htm"><span>Home</span></a></li><li id="item-473"><a href="https://invenium.ca/web.htm"><span>IT Solutions</span></a></li><li id="item-474" class="current active"><a href="https://invenium.ca/innovation.htm"><span>Products</span></a></li><li id="item-476"><a href="https://invenium.ca/services.htm"><span>Professional Services</span></a></li><li id="item-472"><a href="https://invenium.ca/careers.htm"><span>Careers</span></a></li><li id="item-475" class="last"><a href="https://invenium.ca/contact.htm"><span>Contact</span></a></li></ul>	
+
+                <div class="clear"></div>
+                <div class="copyright">
+                    Copyright INVENIUM Technologies Inc. 2006 - 2021 , All Rights Reserved.		</div>
+            </div>
+        </div>
+    </body></html>
