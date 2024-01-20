@@ -1,0 +1,140 @@
+/* ----------------------------------------------------
+	HOME PAGE SLIDER
+------------------------------------------------------- */
+
+	/* slider */
+	#slider{
+		position:relative;
+		top:-4px;
+		overflow:hidden;
+		margin:0 0 26px 0;
+	}
+	
+	#slider_area,#slider,.slide{		
+		width:640px;
+	}
+	
+	#slider.slider-wrapper{		
+		width:640px;
+	}
+	
+	/* description location */
+	#slider .desc{
+		position:absolute;
+		max-width:420px;
+		right:0;
+		top:60px;
+		font-family: 'Oswald', arial, serif;
+	}
+
+	/* columns common style */
+	#slider .desc span.title{
+		background:url(../images/slider-text-background.png);
+		font-size:24px;
+		line-height:100%;
+		margin:0 0 10px 0;
+	}	
+
+	/* title */
+	#slider .desc span.title, #slider .desc span.title a{
+		text-decoration:none;
+		color:#fff;
+		display:block;
+		
+	}	
+
+	 #slider .desc span.title a,  #slider .desc span.title span{
+		padding:5px;
+		display:block;
+	}
+
+	/* description texts*/
+	#slider .desc span.text{
+		padding:5px;
+		font-size:14px;
+		background:url(../images/slider-text-background.png);
+		text-decoration:none;
+		color:#fff;
+		display:block;
+	}
+	#slider .desc span.text p {
+		margin:0px;
+		padding : 0px;
+	}
+	/* description links */
+	#slider .desc span.text a{
+		color:#e77927;
+		text-decoration:none;
+	}
+
+	#slider .desc span.text a:hover, #slider .desc span.title a:hover{
+		background-color:#e77927;
+		color:#fff !important;
+	}
+
+
+	/* slider buttons*/
+	#numbers{
+		background:#fff;
+		padding:4px 0 0 0;		
+		height:8px;
+		line-height:0;
+		display:inline-block;
+		position:absolute;
+		right:0;
+		bottom:0;
+		z-index:999;
+	}
+
+	#numbers img{
+		display:block;
+	}
+
+	#numbers	a{
+		display:inline-block;
+		background:#dddddd;
+		margin:0 0 0 4px;
+		padding:0;
+	}
+	
+    /* active button style*/
+	#numbers	a.activeSlide{
+		display:inline-block;
+		background:#e77927;
+		margin:0 0 0 4px;
+		padding:0;
+	}
+
+	/* nivo slider */
+	.theme-default .nivo-caption .nivo-text a {
+		color:#e77927;
+		background:transparent;
+	}
+	
+	.theme-default .nivo-caption .nivo-text p {
+		margin:0px;
+		padding:0px;
+	}
+	
+	.theme-default .nivo-directionNav a {
+		background-color:#e77927;
+		color:#fff;
+	}
+	
+	.theme-default .nivo-directionNav a:hover{
+		background-color:#E7A53C;
+		color:#fff !important;
+	}
+
+	.theme-default .nivo-caption a:hover{
+		background-color:#e77927;
+		color:#fff !important;
+	}
+	
+	.theme-default .nivo-caption .nivo-title a:hover{
+		background-color:#e77927;
+		color:#fff !important;
+	}
+	
+
+	
